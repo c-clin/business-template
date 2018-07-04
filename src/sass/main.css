@@ -37,7 +37,6 @@ body {
 .home {
   height: 100vh;
   width: 100%;
-  padding-top: -2rem;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./assets/plant-home.jpg);
   background-size: cover;
   background-position: center top; }
@@ -78,30 +77,68 @@ body {
     .about__section-top > * {
       height: 50rem; }
     .about__section-top .about-text-1 {
+      padding: 8rem 9rem;
       font-size: 1.6rem;
       flex: 0 0 50%;
-      background-color: orangered; }
+      background-color: #fff4ef;
+      color: #8d5757;
+      line-height: 25px;
+      hyphens: auto; }
+      .about__section-top .about-text-1 h4 {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 15px;
+        margin-bottom: 1.5rem; }
+      .about__section-top .about-text-1 p {
+        font-weight: 300; }
     .about__section-top .about-photo-1 {
-      flex: 0 0 25%; }
+      flex: 1 1 0%; }
       .about__section-top .about-photo-1 img {
-        height: 100%; }
+        height: 100%;
+        -webkit-filter: grayscale(30%);
+        filter: grayscale(30%); }
     .about__section-top .about-photo-2 {
-      flex: 0 0 25%; }
+      flex: 1 1 0%; }
       .about__section-top .about-photo-2 img {
-        height: 100%; }
+        height: 100%;
+        -webkit-filter: grayscale(30%);
+        filter: grayscale(30%); }
   .about__section-bottom {
     display: flex;
     justify-content: center; }
     .about__section-bottom .about-photo-3 {
-      flex: 0 0 45%;
+      flex: 0 0 30%;
       height: 50rem; }
       .about__section-bottom .about-photo-3 img {
-        height: 100%; }
+        height: 100%;
+        -webkit-filter: grayscale(30%);
+        filter: grayscale(30%) brightness(110%); }
     .about__section-bottom .about-text-2 {
-      flex: 0 0 45%;
-      font-size: 3rem;
+      flex: 1 1 0%;
+      font-size: 5.5rem;
+      font-weight: 700;
+      text-align: center;
       text-transform: uppercase;
-      background-color: yellowgreen; }
+      background-color: #193133;
+      color: #ce947d;
+      overflow: hidden;
+      padding: 9rem; }
+      .about__section-bottom .about-text-2 .btn-inline {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        margin-top: 4rem;
+        padding: 0.9rem 3.9rem;
+        background-color: transparent;
+        font-weight: 300;
+        color: currentColor;
+        text-transform: capitalize;
+        border: 1.5px solid #ce947d;
+        transition: all 0.3s; }
+        .about__section-bottom .about-text-2 .btn-inline:hover {
+          cursor: pointer;
+          color: #193133;
+          background-color: #ce947d; }
 
 * {
   margin: 0;

@@ -75,7 +75,8 @@ body {
     justify-content: center;
     align-items: center; }
     .about__section-top > * {
-      height: 50rem; }
+      height: 50rem;
+      align-self: stretch; }
     .about__section-top .about-text-1 {
       padding: 8rem 9rem;
       font-size: 1.6rem;
@@ -91,30 +92,36 @@ body {
         margin-bottom: 1.5rem; }
       .about__section-top .about-text-1 p {
         font-weight: 300; }
-    .about__section-top .about-photo-1 {
-      flex: 1 1 0%; }
-      .about__section-top .about-photo-1 img {
+    .about__section-top .about-top-photo {
+      flex: 1;
+      overflow: hidden; }
+      .about__section-top .about-top-photo img {
         height: 100%;
-        -webkit-filter: grayscale(30%);
-        filter: grayscale(30%); }
-    .about__section-top .about-photo-2 {
-      flex: 1 1 0%; }
-      .about__section-top .about-photo-2 img {
-        height: 100%;
-        -webkit-filter: grayscale(30%);
-        filter: grayscale(30%); }
+        -webkit-filter: grayscale(40%);
+        filter: grayscale(40%);
+        transform: scale(1);
+        transition: all 0.3s; }
+        .about__section-top .about-top-photo img:hover {
+          transform: scale(1.15); }
   .about__section-bottom {
     display: flex;
     justify-content: center; }
     .about__section-bottom .about-photo-3 {
-      flex: 0 0 30%;
-      height: 50rem; }
+      flex: 0 0 50%;
+      height: 50rem;
+      overflow: hidden;
+      background-position: center bottom; }
       .about__section-bottom .about-photo-3 img {
-        height: 100%;
-        -webkit-filter: grayscale(30%);
-        filter: grayscale(30%) brightness(110%); }
+        width: 100%;
+        -webkit-filter: grayscale(40%);
+        filter: grayscale(40%) brightness(110%);
+        overflow: hidden;
+        transform: scale(1) translateY(-100px);
+        transition: all 0.3s; }
+        .about__section-bottom .about-photo-3 img:hover {
+          transform: scale(1.15) translateY(-100px); }
     .about__section-bottom .about-text-2 {
-      flex: 1 1 0%;
+      flex: 1;
       font-size: 5.5rem;
       font-weight: 700;
       text-align: center;

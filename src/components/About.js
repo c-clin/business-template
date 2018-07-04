@@ -14,8 +14,7 @@ const About = () => {
             Exercitationem dicta optio sunt eos aliquid itaque obcaecati eaque
             impedit! Sed quod hic architecto consequuntur, id tenetur corrupti
             porro ratione. Reprehenderit, voluptas. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Libero non iure amet laborum aperiam
-            eaque voluptatum natus mollitia enim asperiores.
+            consectetur adipisicing elit.
             <br />
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
             minus nam nihil perspiciatis sed excepturi reprehenderit id placeat
@@ -23,10 +22,10 @@ const About = () => {
             accusamus ratione!
           </p>
         </div>
-        <div className="about-photo-1">
+        <div className="about-top-photo">
           <img src={plant1} alt="Room of plants" />
         </div>
-        <div className="about-photo-2">
+        <div className="about-top-photo">
           <img src={plant2} alt="plants" />
         </div>
       </div>
