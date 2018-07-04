@@ -1,13 +1,12 @@
 .home {
   height: 100vh;
   width: 100%;
-  padding-top: -2rem;
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.1)
     ),
-    url(./assets/plant-1.jpg);
+    url(./assets/plant-home.jpg); // Photo by Khai Sze Ong on Unsplash
   background-size: cover;
   background-position: center top;
 
@@ -36,6 +35,109 @@
       animation: moveInRight;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+    }
+  }
+}
+
+.about {
+  margin: 2rem 0;
+
+  &__section-top {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      height: 50rem;
+    }
+
+    .about-text-1 {
+      padding: 8rem 9rem;
+      font-size: 1.6rem;
+      flex: 0 0 50%;
+      background-color: #fff4ef;
+      color: #8d5757;
+      line-height: 25px;
+      hyphens: auto;
+
+      h4 {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 15px;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-weight: 300;
+      }
+    }
+
+    .about-photo-1 {
+      flex: 1 1 0%;
+
+      img {
+        height: 100%;
+        -webkit-filter: grayscale(30%);
+        filter: grayscale(30%);
+      }
+    }
+
+    .about-photo-2 {
+      flex: 1 1 0%;
+      img {
+        height: 100%;
+        -webkit-filter: grayscale(30%);
+        filter: grayscale(30%);
+      }
+    }
+  }
+
+  &__section-bottom {
+    display: flex;
+    justify-content: center;
+
+    .about-photo-3 {
+      flex: 0 0 30%;
+      height: 50rem;
+
+      img {
+        height: 100%;
+        -webkit-filter: grayscale(30%);
+        filter: grayscale(30%) brightness(110%);
+      }
+    }
+
+    .about-text-2 {
+      flex: 1 1 0%;
+      font-size: 5.5rem;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: $color-primary-dark;
+      color: #ce947d;
+      overflow: hidden;
+      padding: 9rem;
+
+      .btn-inline {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        margin-top: 4rem;
+        padding: 0.9rem 3.9rem;
+        background-color: transparent;
+        font-weight: 300;
+        color: currentColor;
+        text-transform: capitalize;
+        border: 1.5px solid #ce947d;
+        transition: all 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          color: $color-primary-dark;
+          background-color: #ce947d;
+        }
+      }
     }
   }
 }
