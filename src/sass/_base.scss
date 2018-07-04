@@ -11,6 +11,9 @@ $color-primary: #2a902a;
 $color-primary-dark: #193133;
 $color-primary-light: #0cc70c;
 
+$color-grey-light: #f4f2f2;
+$color-grey-light-2: #777;
+
 // animations
 @keyframes moveInLeft {
   0% {
@@ -61,6 +64,7 @@ body {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px; hense 10px/16px = 62.5%;
   padding: 2rem;
+  background-color: $color-grey-light;
 }
 
 // picture credit
@@ -68,3 +72,5 @@ body {
 // plant-1.jpg Photo by Khai Sze Ong on Unsplash
 // Photo by Nielsen Ramon on Unsplash
 // Photo by Chelsea Bock on Unsplash
+// Photo by Gaelle Marcel on Unsplash
+// Photo by Scott Webb on Unsplash

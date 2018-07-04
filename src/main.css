@@ -32,7 +32,8 @@ body {
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   font-size: 62.5%;
-  padding: 2rem; }
+  padding: 2rem;
+  background-color: #f4f2f2; }
 
 .home {
   height: 100vh;
@@ -130,7 +131,7 @@ body {
       color: #ce947d;
       overflow: hidden;
       padding: 9rem; }
-      .about__section-bottom .about-text-2 .btn-inline {
+      .about__section-bottom .about-text-2 .btn-inline, .about__section-bottom .about-text-2 .btn-inline:link, .about__section-bottom .about-text-2 .btn-inline:visited {
         display: block;
         margin: 0 auto;
         font-size: 1.8rem;
@@ -141,11 +142,80 @@ body {
         color: currentColor;
         text-transform: capitalize;
         border: 1.5px solid #ce947d;
+        transform: translateY(0);
         transition: all 0.3s; }
-        .about__section-bottom .about-text-2 .btn-inline:hover {
+      .about__section-bottom .about-text-2 .btn-inline:hover {
+        cursor: pointer;
+        color: #193133;
+        background-color: #ce947d; }
+      .about__section-bottom .about-text-2 .btn-inline:focus, .about__section-bottom .about-text-2 .btn-inline:active {
+        outline: none;
+        transform: translateY(3px); }
+
+.collection {
+  display: flex; }
+  .collection__card {
+    margin: 2rem;
+    position: relative;
+    transition: all 0.3s;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    backface-visibility: hidden; }
+    .collection__card-picture {
+      height: 50rem;
+      overflow: hidden;
+      transition: all 0.9s ease-out;
+      backface-visibility: hidden; }
+      .collection__card-picture img {
+        width: 100%;
+        -webkit-filter: grayscale(40%);
+        filter: grayscale(40%) brightness(70%); }
+    .collection__card-back {
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.9s ease-out;
+      background-image: linear-gradient(to right bottom, #436b6e, #193133); }
+      .collection__card-back .btn-inline {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 3px;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 50%;
+        color: #ce947d;
+        padding: 0.9rem 3.9rem;
+        background-color: transparent;
+        font-weight: 300;
+        text-transform: capitalize;
+        border: 1.5px solid #ce947d;
+        transition: all 0.3s; }
+        .collection__card-back .btn-inline:hover {
           cursor: pointer;
           color: #193133;
           background-color: #ce947d; }
+        .collection__card-back .btn-inline:focus, .collection__card-back .btn-inline:active {
+          outline: none;
+          transform: translateY(3px); }
+    .collection__card:hover .collection__card-picture {
+      transform: rotateY(-180deg); }
+    .collection__card:hover .collection__card-back {
+      transform: rotateY(0); }
+    .collection__card-text {
+      position: absolute;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 3px;
+      font-size: 3rem;
+      color: #f4f2f2; }
 
 * {
   margin: 0;
