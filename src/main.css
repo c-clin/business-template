@@ -82,15 +82,16 @@ body {
       padding: 8rem 9rem;
       font-size: 1.6rem;
       flex: 0 0 50%;
-      background-color: #fff4ef;
-      color: #8d5757;
+      background-color: #fff8f5;
+      color: #966a6a;
       line-height: 25px;
       hyphens: auto; }
       .about__section-top .about-text-1 h4 {
         text-transform: uppercase;
         text-align: center;
         letter-spacing: 15px;
-        margin-bottom: 1.5rem; }
+        margin-bottom: 1.5rem;
+        font-weight: 400; }
       .about__section-top .about-text-1 p {
         font-weight: 300; }
     .about__section-top .about-top-photo {
@@ -180,29 +181,36 @@ body {
       height: 100%;
       transition: all 0.9s ease-out;
       background-image: linear-gradient(to right bottom, #436b6e, #193133); }
-      .collection__card-back .btn-inline {
+      .collection__card-back-details {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border-radius: 3px;
-        text-align: center;
-        font-size: 1.5rem;
-        width: 50%;
-        color: #ce947d;
-        padding: 0.9rem 3.9rem;
-        background-color: transparent;
-        font-weight: 300;
-        text-transform: capitalize;
-        border: 1.5px solid #ce947d;
-        transition: all 0.3s; }
-        .collection__card-back .btn-inline:hover {
-          cursor: pointer;
-          color: #193133;
-          background-color: #ce947d; }
-        .collection__card-back .btn-inline:focus, .collection__card-back .btn-inline:active {
-          outline: none;
-          transform: translateY(3px); }
+        border-radius: 3px; }
+        .collection__card-back-details p {
+          color: #f4f2f2;
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 4rem;
+          text-transform: uppercase;
+          text-align: center; }
+        .collection__card-back-details .btn-inline {
+          text-align: center;
+          font-size: 1.5rem;
+          color: #ce947d;
+          padding: 0.9rem 3.9rem;
+          background-color: transparent;
+          font-weight: 300;
+          text-transform: capitalize;
+          border: 1.5px solid #ce947d;
+          transition: all 0.3s; }
+          .collection__card-back-details .btn-inline:hover {
+            cursor: pointer;
+            color: #193133;
+            background-color: #ce947d; }
+          .collection__card-back-details .btn-inline:focus, .collection__card-back-details .btn-inline:active {
+            outline: none;
+            transform: translateY(3px); }
     .collection__card:hover .collection__card-picture {
       transform: rotateY(-180deg); }
     .collection__card:hover .collection__card-back {
@@ -216,6 +224,59 @@ body {
       border-radius: 3px;
       font-size: 3rem;
       color: #f4f2f2; }
+
+.contact {
+  background-image: url("./assets/contact-plant.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  position: relative; }
+  .contact-heading {
+    padding: 8rem 9rem;
+    font-size: 1.6rem;
+    color: #966a6a;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 15px;
+    margin-bottom: 1.5rem;
+    font-weight: 400; }
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    color: #966a6a; }
+    .contact-form .form-group {
+      border: none;
+      position: relative;
+      display: flex;
+      align-items: center; }
+      .contact-form .form-group:not(:last-child) {
+        margin-bottom: 1rem; }
+      .contact-form .form-group:first-child {
+        margin-right: 1rem; }
+      .contact-form .form-group .form-label {
+        font-size: 1.3rem;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        margin-left: 1rem; }
+      .contact-form .form-group .form-input {
+        height: 3rem;
+        background-color: #fff;
+        border: none;
+        box-shadow: none;
+        width: 100%; }
+        .contact-form .form-group .form-input:focus {
+          outline: none; }
+      .contact-form .form-group.small {
+        flex: 0 0 49%; }
+      .contact-form .form-group.big {
+        flex: 1 1 100%; }
 
 * {
   margin: 0;

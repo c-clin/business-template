@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Collection from './components/Collection';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Home />
         <About />
         <Collection />
+        <Contact />
 
         <Route path="/home" component={Home} />
         <Route path="/header" component={Header} />

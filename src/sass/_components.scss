@@ -1,3 +1,5 @@
+/////////////////////////////////////////
+// HOME
 .home {
   height: 100vh;
   width: 100%;
@@ -39,6 +41,8 @@
   }
 }
 
+/////////////////////////////////////////
+// ABOUT
 .about {
   margin: 2rem 0;
 
@@ -57,8 +61,8 @@
       padding: 8rem 9rem;
       font-size: 1.6rem;
       flex: 0 0 50%;
-      background-color: #fff4ef;
-      color: #8d5757;
+      background-color: #fff8f5;
+      color: #966a6a;
       line-height: 25px;
       hyphens: auto;
 
@@ -67,6 +71,7 @@
         text-align: center;
         letter-spacing: 15px;
         margin-bottom: 1.5rem;
+        font-weight: 400;
       }
 
       p {
@@ -161,6 +166,8 @@
   }
 }
 
+/////////////////////////////////////////
+// COLLECTION
 .collection {
   display: flex;
 
@@ -196,29 +203,40 @@
       transition: all 0.9s ease-out;
       background-image: linear-gradient(to right bottom, #436b6e, #193133);
 
-      .btn-inline {
+      &-details {
         @include absCenter;
-        text-align: center;
-        font-size: 1.5rem;
-        width: 50%;
-        color: #ce947d;
-        padding: 0.9rem 3.9rem;
-        background-color: transparent;
-        font-weight: 300;
-        text-transform: capitalize;
-        border: 1.5px solid #ce947d;
-        transition: all 0.3s;
+        p {
+          color: $color-grey-light;
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 4rem;
 
-        &:hover {
-          cursor: pointer;
-          color: $color-primary-dark;
-          background-color: #ce947d;
+          text-transform: uppercase;
+          text-align: center;
         }
 
-        &:focus,
-        &:active {
-          outline: none;
-          transform: translateY(3px);
+        .btn-inline {
+          text-align: center;
+          font-size: 1.5rem;
+          color: #ce947d;
+          padding: 0.9rem 3.9rem;
+          background-color: transparent;
+          font-weight: 300;
+          text-transform: capitalize;
+          border: 1.5px solid #ce947d;
+          transition: all 0.3s;
+
+          &:hover {
+            cursor: pointer;
+            color: $color-primary-dark;
+            background-color: #ce947d;
+          }
+
+          &:focus,
+          &:active {
+            outline: none;
+            transform: translateY(3px);
+          }
         }
       }
     }
@@ -235,6 +253,78 @@
       @include absCenter;
       font-size: 3rem;
       color: $color-grey-light;
+    }
+  }
+}
+
+/////////////////////////////////////////
+// CONTACT
+.contact {
+  background-image: url('./assets/contact-plant.jpg');
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  position: relative;
+
+  &-heading {
+    padding: 8rem 9rem;
+    font-size: 1.6rem;
+    color: #966a6a;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 15px;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+
+  &-form {
+    display: flex;
+    flex-wrap: wrap;
+    @include absCenter;
+    color: #966a6a;
+
+    .form-group {
+      border: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      &:first-child {
+        // margin-left: -1rem;
+        margin-right: 1rem;
+      }
+
+      .form-label {
+        font-size: 1.3rem;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+      }
+
+      .form-input {
+        height: 3rem;
+        background-color: #fff;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &.small {
+        flex: 0 0 49%;
+      }
+
+      &.big {
+        flex: 1 1 100%;
+      }
     }
   }
 }

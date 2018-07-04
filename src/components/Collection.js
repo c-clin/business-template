@@ -12,8 +12,12 @@ const Collection = () => {
           <img src={collection1} alt="cacti" />
           <figcaption className="collection__card-text">Cacti</figcaption>
         </figure>
+
         <div className="collection__card-back">
-          <p className="btn-inline">Shop collection</p>
+          <div className="collection__card-back-details">
+            <p>Have yourself a cactus</p>
+            <button className="btn-inline">Shop collection</button>
+          </div>
         </div>
       </div>
       <div class="collection__card">
@@ -21,8 +25,12 @@ const Collection = () => {
           <img src={collection2} alt="plant" />
           <figcaption className="collection__card-text">Plants</figcaption>
         </figure>
+
         <div className="collection__card-back">
-          <p className="btn-inline">Shop collection</p>
+          <div className="collection__card-back-details">
+            <p>The world needs more plants</p>
+            <button className="btn-inline">Shop collection</button>
+          </div>
         </div>
       </div>
       <div class="collection__card">
@@ -30,8 +38,12 @@ const Collection = () => {
           <img src={collection3} alt="sucullent" />
           <figcaption className="collection__card-text">Succulents</figcaption>
         </figure>
+
         <div className="collection__card-back">
-          <p className="btn-inline">Shop collection</p>
+          <div className="collection__card-back-details">
+            <p>We love succulents</p>
+            <button className="btn-inline">Shop collection</button>
+          </div>
         </div>
       </div>
     </div>
