@@ -1,0 +1,66 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
+
+// variables
+$color-primary: #2a902a;
+$color-primary-dark: #004c00;
+$color-primary-light: #0cc70c;
+
+// animations
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px; hense 10px/16px = 62.5%;
+}
+
+// picture credit
+// plants Photo by Ashley Van Dyke on Unsplash

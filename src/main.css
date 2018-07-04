@@ -1,28 +1,73 @@
-.App {
-  text-align: center; }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
+* {
+  margin: 0;
+  padding: 0; }
 
-.App-title {
-  font-size: 1.5em; }
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
 
-.App-intro {
-  font-size: large; }
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.home {
+  height: 100vh;
+  width: 100%;
+  padding-top: -2rem;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./assets/plant-1.jpg);
+  background-size: cover;
+  background-position: center top; }
+  .home .text-box {
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px; }
+    .home .text-box .heading-primary {
+      display: block;
+      font-size: 5rem;
+      text-align: center;
+      letter-spacing: 35px;
+      animation: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
+    .home .text-box .heading-sub {
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem;
+      letter-spacing: 10px;
+      font-weight: 300;
+      animation: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
 
-h2 {
-  color: red;
-  background: black; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

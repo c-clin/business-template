@@ -1,6 +1,9 @@
-@import 'test';
+@import 'base';
+@import 'components';
+@import 'layout';
 
-h2 {
-  color: red;
-  background: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

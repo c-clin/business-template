@@ -1,0 +1,41 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  padding-top: -2rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(./assets/plant-1.jpg);
+  background-size: cover;
+  background-position: center top;
+
+  .text-box {
+    color: #fff;
+    text-transform: uppercase;
+
+    @include absCenter;
+    .heading-primary {
+      display: block;
+      font-size: 5rem;
+      text-align: center;
+      letter-spacing: 35px;
+      animation: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+
+    .heading-sub {
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem;
+      letter-spacing: 10px;
+      font-weight: 300;
+      animation: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+  }
+}
