@@ -6,7 +6,7 @@ import collection3 from '../assets/collection-3.jpg';
 
 const Collection = () => {
   return (
-    <div className="collection">
+    <section className="collection">
       <div className="collection__card">
         <figure className="collection__card-picture">
           <img src={collection1} alt="cacti" />
@@ -23,7 +23,7 @@ const Collection = () => {
       <div class="collection__card">
         <figure className="collection__card-picture">
           <img src={collection2} alt="plant" />
-          <figcaption className="collection__card-text">Plants</figcaption>
+          <figcaption className="collection__card-text">Succulents</figcaption>
         </figure>
 
         <div className="collection__card-back">
@@ -36,7 +36,7 @@ const Collection = () => {
       <div class="collection__card">
         <figure className="collection__card-picture">
           <img src={collection3} alt="sucullent" />
-          <figcaption className="collection__card-text">Succulents</figcaption>
+          <figcaption className="collection__card-text">Plants</figcaption>
         </figure>
 
         <div className="collection__card-back">
@@ -46,7 +46,7 @@ const Collection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

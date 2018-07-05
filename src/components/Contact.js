@@ -2,8 +2,9 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <section className="contact">
       <h3 className="contact-heading">For special requests and orders</h3>
+      <hr />
       <form action="#" className="contact-form">
         <div className="form-group small">
           <label className="form-label" htmlFor="name">
@@ -51,7 +52,7 @@ const Contact = () => {
         </div>
         <button className="btn-send">Send</button>
       </form>
-    </div>
+    </section>
   );
 };
 

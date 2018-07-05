@@ -9,6 +9,7 @@ const About = () => {
       <div className="about__section-top">
         <div className="about-text-1">
           <h4>About Us</h4>
+          <hr />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem dicta optio sunt eos aliquid itaque obcaecati eaque
