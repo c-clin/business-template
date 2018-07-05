@@ -11,7 +11,7 @@
     font-weight: 700;
     a {
       text-decoration: none;
-      color: $color-dusty-pink;
+      color: $color-dusty-orange-dark;
     }
   }
 
@@ -479,7 +479,8 @@
     }
 
     &:hover {
-      color: $color-dusty-orange-dark;
+      transform: skewY(-4deg) scale(1.15);
+      background-color: $color-primary-dusty;
     }
   }
 
@@ -494,7 +495,7 @@
       padding-left: 0.5rem;
       color: $color-dusty-orange;
       width: 20rem;
-      background-color: #3d4849;
+      background-color: $color-primary-dusty;
 
       &::-webkit-input-placeholder {
         color: $color-dusty-orange;
@@ -536,5 +537,21 @@
   &__copyright {
     margin-top: 5rem;
     text-align: center;
+    p {
+      display: inline-block;
+
+      a {
+        color: $color-dusty-orange-dark;
+        text-decoration: none;
+
+        &:hover {
+          transform: skewY(-4deg) scale(1.15);
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
   }
 }

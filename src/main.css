@@ -45,7 +45,7 @@ body {
     font-weight: 700; }
     .header__name a {
       text-decoration: none;
-      color: #966a6a; }
+      color: #b17e6a; }
   .header__list {
     list-style: none; }
   .header__link {
@@ -365,7 +365,8 @@ body {
     .footer__link:not(:last-child) {
       margin-bottom: 1.5rem; }
     .footer__link:hover {
-      color: #b17e6a; }
+      transform: skewY(-4deg) scale(1.15);
+      background-color: #3d4849; }
   .footer__subscribe {
     display: inline-block;
     display: flex;
@@ -400,6 +401,15 @@ body {
   .footer__copyright {
     margin-top: 5rem;
     text-align: center; }
+    .footer__copyright p {
+      display: inline-block; }
+      .footer__copyright p a {
+        color: #b17e6a;
+        text-decoration: none; }
+        .footer__copyright p a:hover {
+          transform: skewY(-4deg) scale(1.15); }
+      .footer__copyright p:not(:last-child) {
+        margin-right: 2rem; }
 
 * {
   margin: 0;
