@@ -6,7 +6,7 @@ const Contact = () => {
       <h3 className="contact-heading">For special requests and orders</h3>
       <hr />
       <form action="#" className="contact-form">
-        <div className="form-group small">
+        <div className="form-group small-1">
           <label className="form-label" htmlFor="name">
             Name
           </label>
@@ -17,7 +17,7 @@ const Contact = () => {
             placeholder="Name*"
           />
         </div>
-        <div className="form-group small">
+        <div className="form-group small-2">
           <label className="form-label" htmlFor="name">
             Email
           </label>

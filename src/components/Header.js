@@ -15,14 +15,14 @@ const Header = () => {
           <li className="header__link">
             <Link to="/about">About</Link>
           </li>
+          {/* <li className="header__link">
+            <Link to="/Collection">Shop</Link>
+          </li> */}
+          <li className="header__link">
+            <Link to="/service">Service</Link>
+          </li>
           <li className="header__link">
             <Link to="/contact">Contact</Link>
-          </li>
-          <li className="header__link">
-            <Link to="/Collection">Collection</Link>
-          </li>
-          <li className="header__link">
-            <Link to="/testimonials">Testimonials</Link>
           </li>
         </ul>
       </div>

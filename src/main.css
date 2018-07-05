@@ -61,14 +61,15 @@ body {
       .header__link a:hover {
         background-image: linear-gradient(to right, #966a6a, #ce947d); }
     .header__link:not(:last-child) {
-      margin-right: 1rem; }
+      margin-right: 2rem; }
 
 .home {
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./assets/plant-home.jpg);
   background-size: cover;
-  background-position: center top; }
+  background-position: center top;
+  margin-bottom: 2rem; }
   .home .text-box {
     color: #fff;
     text-transform: uppercase;
@@ -97,7 +98,7 @@ body {
       animation-timing-function: ease-out; }
 
 .about {
-  margin: 2rem 0; }
+  margin-bottom: 2rem; }
   .about__section-top {
     display: block;
     display: flex;
@@ -274,7 +275,8 @@ body {
   background-image: url("./assets/contact-plant.jpg");
   background-size: cover;
   background-position: center top;
-  position: relative; }
+  position: relative;
+  margin-bottom: 2rem; }
   .contact-heading {
     padding-bottom: 3rem;
     font-size: 1.6rem;
@@ -331,8 +333,10 @@ body {
           background-color: #f4f2f2; }
         .contact-form .form-group .form-input::-webkit-input-placeholder {
           color: #966a6a; }
-      .contact-form .form-group.small {
+      .contact-form .form-group.small-1 {
         flex: 0 0 49%; }
+      .contact-form .form-group.small-2 {
+        flex: 1; }
       .contact-form .form-group.big {
         flex: 1 1 100%; }
     .contact-form .btn-send {
@@ -377,7 +381,8 @@ body {
       padding-left: 0.5rem;
       color: #ce947d;
       width: 20rem;
-      background-color: #3d4849; }
+      background-color: #3d4849;
+      font-weight: 300; }
       .footer__subscribe input::-webkit-input-placeholder {
         color: #ce947d; }
       .footer__subscribe input:focus {
@@ -411,10 +416,11 @@ body {
       .footer__copyright p:not(:last-child) {
         margin-right: 2rem; }
 
-.testimonials {
+.service-container {
   position: relative;
-  height: 100vh; }
-  .testimonials .bg-video {
+  height: 100vh;
+  margin-bottom: 2rem; }
+  .service-container .bg-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -422,10 +428,56 @@ body {
     width: 100%;
     opacity: 0.15;
     overflow: hidden; }
-    .testimonials .bg-video__content {
+    .service-container .bg-video__content {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+  .service-container .service {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    height: 100vh; }
+    .service-container .service__picture {
+      background-size: cover;
+      height: 23rem;
+      border-radius: 3px;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+      .service-container .service__picture--1 {
+        background-image: url(./assets/individual.jpg);
+        background-position: center; }
+      .service-container .service__picture--2 {
+        background-image: url(./assets/holiday.jpg); }
+      .service-container .service__picture--3 {
+        background-image: url(./assets/occasion.jpg);
+        background-position: center top; }
+    .service-container .service__box {
+      position: relative;
+      flex-basis: 25%;
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+      transition: all 0.3s; }
+      .service-container .service__box:not(:last-child) {
+        margin-right: 3rem; }
+      .service-container .service__box:hover {
+        transform: translateY(-1rem) scale(1.05);
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2); }
+    .service-container .service__title {
+      font-size: 2.1rem;
+      text-align: center;
+      font-weight: 300;
+      display: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      margin-top: 1rem; }
+    .service-container .service__description {
+      padding: 2rem;
+      font-size: 1.3rem;
+      hyphens: auto;
+      font-weight: 300; }
 
 * {
   margin: 0;

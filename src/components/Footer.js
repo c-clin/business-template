@@ -18,20 +18,19 @@ const Footer = () => {
           <button>Subscribe Now</button>
         </div>
         <div className="footer__address">
-          <p>Prickles</p>
           <p>12345 Main St,</p>
           <p>Los Angeles, CA 90026</p>
           <p>hello@prickles.com</p>
-          <p>1-800 123 4567</p>
+          <p>Tel: 123-456-7890</p>
         </div>
       </div>
 
       <div className="footer__copyright">
-        <p>&copy; All rights reserved by Prickles</p>
+        <p>&copy; All rights reserved by Prickles.</p>
         <p>
-          Pictures are from <a href="https://unsplash.com/">Unsplash</a>
+          Pictures are from <a href="https://unsplash.com/">Unsplash</a>.
         </p>
-        <p>Made by Catherine Lin</p>
+        <p>Made by Catherine Lin</p>.
       </div>
     </footer>
   );

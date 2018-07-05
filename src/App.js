@@ -7,7 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Collection from './components/Collection';
 import Footer from './components/Footer';
-import Testimonials from './components/Testimonials';
+import Service from './components/Service';
 
 class App extends Component {
   render() {
@@ -21,7 +21,7 @@ class App extends Component {
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/collection" component={Collection} />
-        <Route exact path="/testimonials" component={Testimonials} />
+        <Route exact path="/service" component={Service} />
         <Footer />
       </div>
     );

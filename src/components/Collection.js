@@ -20,7 +20,7 @@ const Collection = () => {
           </div>
         </div>
       </div>
-      <div class="collection__card">
+      <div className="collection__card">
         <figure className="collection__card-picture">
           <img src={collection2} alt="plant" />
           <figcaption className="collection__card-text">Succulents</figcaption>
