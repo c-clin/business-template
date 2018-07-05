@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import plant1 from '../assets/plant-1.jpg';
 import plant2 from '../assets/plant-2.jpg';
 import plant3 from '../assets/plant-3.jpg';
