@@ -232,23 +232,20 @@ body {
   height: 100vh;
   position: relative; }
   .contact-heading {
-    padding: 8rem 9rem;
+    padding: 8rem 9rem 4rem 9rem;
     font-size: 1.6rem;
     color: #966a6a;
     line-height: 25px;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 15px;
+    letter-spacing: 13px;
     margin-bottom: 1.5rem;
     font-weight: 400; }
   .contact-form {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 3px;
+    margin: 0 auto;
+    width: 50%;
     color: #966a6a; }
     .contact-form .form-group {
       border: none;
@@ -260,9 +257,9 @@ body {
       .contact-form .form-group:first-child {
         margin-right: 1rem; }
       .contact-form .form-group .form-label {
+        display: none;
         font-size: 1.3rem;
         position: absolute;
-        display: flex;
         align-items: center;
         margin-left: 1rem; }
       .contact-form .form-group .form-input {
@@ -270,13 +267,28 @@ body {
         background-color: #fff;
         border: none;
         box-shadow: none;
-        width: 100%; }
+        width: 100%;
+        padding-left: 0.6rem; }
+        .contact-form .form-group .form-input.message {
+          height: 6rem;
+          padding-top: 0.4rem; }
         .contact-form .form-group .form-input:focus {
-          outline: none; }
+          outline: none;
+          background-color: #f4f2f2; }
+        .contact-form .form-group .form-input::-webkit-input-placeholder {
+          color: #966a6a; }
       .contact-form .form-group.small {
         flex: 0 0 49%; }
       .contact-form .form-group.big {
         flex: 1 1 100%; }
+    .contact-form .btn-send {
+      cursor: pointer;
+      width: 100%;
+      padding: 1rem 2rem;
+      color: #f4f2f2;
+      background-color: #966a6a;
+      border: none;
+      font-weight: 300; }
 
 * {
   margin: 0;
