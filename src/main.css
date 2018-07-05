@@ -148,7 +148,7 @@ body {
     display: flex;
     justify-content: center; }
     .about__section-bottom .about-photo-3 {
-      flex: 0 0 50%;
+      flex: 1;
       height: 50rem;
       overflow: hidden;
       background-position: center bottom; }
@@ -162,7 +162,7 @@ body {
         .about__section-bottom .about-photo-3 img:hover {
           transform: scale(1.15) translateY(-100px); }
     .about__section-bottom .about-text-2 {
-      flex: 1;
+      flex: 0 0 50%;
       font-size: 5.5rem;
       font-weight: 700;
       text-align: center;
@@ -410,6 +410,22 @@ body {
           transform: skewY(-4deg) scale(1.15); }
       .footer__copyright p:not(:last-child) {
         margin-right: 2rem; }
+
+.testimonials {
+  position: relative;
+  height: 100vh; }
+  .testimonials .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.15;
+    overflow: hidden; }
+    .testimonials .bg-video__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
 
 * {
   margin: 0;

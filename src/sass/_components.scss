@@ -178,7 +178,7 @@
     justify-content: center;
 
     .about-photo-3 {
-      flex: 0 0 50%;
+      flex: 1;
       height: 50rem;
       overflow: hidden;
       background-position: center bottom;
@@ -198,7 +198,7 @@
     }
 
     .about-text-2 {
-      flex: 1;
+      flex: 0 0 50%;
       font-size: 5.5rem;
       font-weight: 700;
       text-align: center;
@@ -552,6 +552,30 @@
       &:not(:last-child) {
         margin-right: 2rem;
       }
+    }
+  }
+}
+
+/////////////////////////////////////////
+// TESTIMONIALS
+.testimonials {
+  position: relative;
+  height: 100vh;
+
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // z-index: -1;
+    opacity: 0.15;
+    overflow: hidden;
+
+    &__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
