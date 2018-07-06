@@ -32,6 +32,13 @@ const Footer = () => {
         </p>
         <p>Made by Catherine Lin</p>.
       </div>
+
+      <div className="footer__social-media">
+        <i className="fa fa-facebook footer-icon" aria-hidden="true" />
+        <i className="fa fa-google-plus footer-icon" aria-hidden="true" />
+        <i className="fa fa-pinterest-p footer-icon" aria-hidden="true" />
+        <i className="fa fa-instagram footer-icon" aria-hidden="true" />
+      </div>
     </footer>
   );
 };

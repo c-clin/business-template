@@ -15,7 +15,14 @@ const Collection = () => {
 
         <div className="collection__card-back">
           <div className="collection__card-back-details">
-            <p>Have yourself a cactus</p>
+            <div className="stars">
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+            </div>
+            <p>Have yourself a cactus"</p>
             <button className="btn-inline">Shop collection</button>
           </div>
         </div>
@@ -28,12 +35,19 @@ const Collection = () => {
 
         <div className="collection__card-back">
           <div className="collection__card-back-details">
-            <p>The world needs more plants</p>
+            <div className="stars">
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+            </div>
+            <p>The world needs more plants"</p>
             <button className="btn-inline">Shop collection</button>
           </div>
         </div>
       </div>
-      <div class="collection__card">
+      <div className="collection__card">
         <figure className="collection__card-picture">
           <img src={collection3} alt="sucullent" />
           <figcaption className="collection__card-text">Plants</figcaption>
@@ -41,7 +55,14 @@ const Collection = () => {
 
         <div className="collection__card-back">
           <div className="collection__card-back-details">
-            <p>We love succulents</p>
+            <div className="stars">
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+              <i className="fa fa-star" aria-hidden="true" />
+            </div>
+            <p>We love succulents"</p>
             <button className="btn-inline">Shop collection</button>
           </div>
         </div>

@@ -226,12 +226,23 @@ body {
       height: 100%;
       transition: all 0.9s ease-out;
       background-image: linear-gradient(to right bottom, #436b6e, #193133); }
+      .collection__card-back .stars {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 5rem;
+        color: #ce947d; }
       .collection__card-back-details {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 3px; }
+        .collection__card-back-details p::before {
+          content: '\201C';
+          position: absolute;
+          top: 1rem;
+          left: -4rem;
+          font-size: 13rem; }
         .collection__card-back-details p {
           color: #f4f2f2;
           font-size: 2.5rem;
@@ -271,7 +282,7 @@ body {
       color: #f4f2f2; }
 
 .contact {
-  padding: 11rem 4rem;
+  padding: 9rem 4rem;
   background-image: url("./assets/contact-plant.jpg");
   background-size: cover;
   background-position: center top;
@@ -415,11 +426,40 @@ body {
           transform: skewY(-4deg) scale(1.15); }
       .footer__copyright p:not(:last-child) {
         margin-right: 2rem; }
+  .footer__social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    font-size: 2.2rem; }
+    .footer__social-media .footer-icon {
+      cursor: pointer;
+      transition: all 0.4s; }
+      .footer__social-media .footer-icon:not(:last-child) {
+        margin-right: 2rem; }
+      .footer__social-media .footer-icon:hover {
+        transform: scale(1.15); }
 
 .service-container {
   position: relative;
   height: 100vh;
   margin-bottom: 2rem; }
+  .service-container__heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: #966a6a; }
+  .service-container hr {
+    width: 9rem;
+    background: #966a6a;
+    height: 0.3rem;
+    text-align: center;
+    margin: 0 auto;
+    border: 0; }
   .service-container .bg-video {
     position: absolute;
     top: 0;
@@ -436,8 +476,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem;
-    height: 100vh; }
+    padding: 6rem 3rem 3rem 3rem; }
     .service-container .service__picture {
       background-size: cover;
       height: 23rem;

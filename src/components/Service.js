@@ -13,7 +13,8 @@ const Service = () => {
           supported!
         </video>
       </div>
-
+      <h3 className="service-container__heading">Our Services</h3>
+      <hr />
       <div className="service">
         <div className="service__box">
           <div className="service__picture service__picture--1" />

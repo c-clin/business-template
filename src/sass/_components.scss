@@ -285,8 +285,23 @@
       transition: all 0.9s ease-out;
       background-image: linear-gradient(to right bottom, #436b6e, #193133);
 
+      .stars {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 5rem;
+        color: $color-dusty-orange;
+      }
+
       &-details {
         @include absCenter;
+        p::before {
+          content: '\201C';
+          position: absolute;
+          top: 1rem;
+          left: -4rem;
+          font-size: 13rem;
+        }
+
         p {
           color: $color-grey-light;
           font-size: 2.5rem;
@@ -342,7 +357,7 @@
 /////////////////////////////////////////
 // CONTACT
 .contact {
-  padding: 11rem 4rem;
+  padding: 9rem 4rem;
   background-image: url('./assets/contact-plant.jpg');
   background-size: cover;
   background-position: center top;
@@ -560,6 +575,27 @@
       }
     }
   }
+
+  &__social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    font-size: 2.2rem;
+
+    .footer-icon {
+      cursor: pointer;
+      transition: all 0.4s;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
 }
 
 /////////////////////////////////////////
@@ -568,6 +604,26 @@
   position: relative;
   height: 100vh;
   margin-bottom: 2rem;
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: $color-dusty-pink;
+  }
+
+  hr {
+    width: 9rem;
+    background: $color-dusty-pink;
+    height: 0.3rem;
+    text-align: center;
+    margin: 0 auto;
+    border: 0;
+  }
 
   .bg-video {
     position: absolute;
@@ -590,8 +646,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem;
-    height: 100vh;
+    padding: 6rem 3rem 3rem 3rem;
 
     &__picture {
       background-size: cover;

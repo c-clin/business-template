@@ -9,6 +9,7 @@ import './main.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import testReducer from './store/reducers/testReducer';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 const composedEnhancers =
   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
