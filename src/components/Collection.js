@@ -22,7 +22,7 @@ const Collection = () => {
               <i className="fa fa-star" aria-hidden="true" />
               <i className="fa fa-star" aria-hidden="true" />
             </div>
-            <p>Have yourself a cactus"</p>
+            <p>Have yourself a cactus</p>
             <button className="btn-inline">Shop collection</button>
           </div>
         </div>
@@ -42,7 +42,7 @@ const Collection = () => {
               <i className="fa fa-star" aria-hidden="true" />
               <i className="fa fa-star" aria-hidden="true" />
             </div>
-            <p>The world needs more plants"</p>
+            <p>The world needs more plants</p>
             <button className="btn-inline">Shop collection</button>
           </div>
         </div>
@@ -62,7 +62,7 @@ const Collection = () => {
               <i className="fa fa-star" aria-hidden="true" />
               <i className="fa fa-star" aria-hidden="true" />
             </div>
-            <p>We love succulents"</p>
+            <p>We love succulents</p>
             <button className="btn-inline">Shop collection</button>
           </div>
         </div>

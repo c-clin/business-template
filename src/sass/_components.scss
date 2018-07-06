@@ -417,6 +417,7 @@
         }
 
         .btn-inline {
+          width: 100%;
           text-align: center;
           font-size: 1.5rem;
           color: #ce947d;
@@ -599,6 +600,7 @@
 .service-container {
   position: relative;
   margin-bottom: 2rem;
+  min-height: 100vh;
 
   &__heading {
     text-transform: uppercase;
