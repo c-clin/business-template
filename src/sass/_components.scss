@@ -9,6 +9,11 @@
   &__name {
     font-size: 3.2rem;
     font-weight: 700;
+
+    @include respond(tab-port) {
+      margin-left: 1rem;
+    }
+
     a {
       text-decoration: none;
       color: $color-dusty-orange-dark;
@@ -33,6 +38,12 @@
     display: inline-block;
     font-size: 2rem;
     font-weight: 300;
+
+    @include respond(tab-port) {
+      &:last-child {
+        margin-right: 1rem;
+      }
+    }
 
     a {
       text-decoration: none;
@@ -88,6 +99,16 @@
       animation: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+
+      @include respond(tab-port) {
+        font-size: 4.5rem;
+        letter-spacing: 32px;
+      }
+
+      @include respond(phone) {
+        font-size: 3.8rem;
+        letter-spacing: 30px;
+      }
     }
 
     .heading-sub {
@@ -100,6 +121,18 @@
       animation: moveInRight;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+
+      @include respond(tab-port) {
+        width: 100%;
+        font-size: 1.8rem;
+        letter-spacing: 9px;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+        font-size: 1.6rem;
+        letter-spacing: 9px;
+      }
     }
   }
 }
@@ -109,10 +142,18 @@
 .about {
   margin-bottom: 2rem;
   &__section-top {
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(phone) {
+      display: block;
+      height: auto;
+
+      & > * {
+        height: auto;
+      }
+    }
 
     & > * {
       height: 50rem;
@@ -130,6 +171,14 @@
       animation: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+
+      @include respond(tab-land) {
+        padding: 5rem 4rem;
+      }
+
+      @include respond(phone) {
+        padding: 7rem 5rem;
+      }
 
       h4 {
         text-transform: uppercase;
@@ -157,14 +206,21 @@
     .about-top-photo {
       flex: 1;
       overflow: hidden;
+      @include respond(phone) {
+        height: auto;
+      }
 
       img {
         height: 100%;
-        // width: 100%;
         -webkit-filter: grayscale(40%);
         filter: grayscale(40%);
         transform: scale(1);
         transition: all 0.3s;
+
+        @include respond(phone) {
+          width: 100%;
+          height: auto;
+        }
 
         &:hover {
           transform: scale(1.15);
@@ -177,28 +233,51 @@
     display: flex;
     justify-content: center;
 
+    @include respond(phone) {
+      display: block;
+      height: auto;
+
+      & > * {
+        height: auto;
+      }
+    }
+
     .about-photo-3 {
       flex: 1;
       height: 50rem;
       overflow: hidden;
-      background-position: center bottom;
+
+      @include respond(phone) {
+        height: auto;
+      }
 
       img {
         width: 100%;
         -webkit-filter: grayscale(40%);
         filter: grayscale(40%) brightness(110%);
         overflow: hidden;
-        transform: scale(1) translateY(-100px);
+        transform: scale(1) translateY(-30px);
         transition: all 0.3s;
 
+        @include respond(tab-port) {
+          height: 100%;
+          transform: scale(1.01);
+        }
+
+        @include respond(phone) {
+          height: auto;
+          transform: scale(1.01);
+        }
+
         &:hover {
-          transform: scale(1.15) translateY(-100px);
+          transform: scale(1.1) translateY(-30px);
         }
       }
     }
 
     .about-text-2 {
       flex: 0 0 50%;
+      max-height: 50rem;
       font-size: 5.5rem;
       font-weight: 700;
       text-align: center;
@@ -210,6 +289,18 @@
       animation: moveInRight;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+
+      @include respond(tab-land) {
+        font-size: 5rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 4.5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+      }
 
       .btn-inline {
         &,
@@ -245,10 +336,14 @@
 }
 
 /////////////////////////////////////////
-// COLLECTION
+// COLLECTIONc
 .collection {
   display: flex;
   margin-bottom: 2rem;
+
+  @include respond(phone) {
+    display: block;
+  }
 
   &__card {
     position: relative;
@@ -256,16 +351,24 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     backface-visibility: hidden;
+    border-radius: 3px;
+
+    @include respond(phone) {
+      &:not(:last-child) {
+        margin-right: 0 !important ;
+        margin-bottom: 1rem;
+      }
+    }
 
     &:not(:last-child) {
       margin-right: 2rem;
     }
 
     &-picture {
-      height: 50rem;
       overflow: hidden;
       transition: all 0.9s ease-out;
       backface-visibility: hidden;
+      border-radius: 3px;
 
       img {
         width: 100%;
@@ -277,6 +380,7 @@
     &-back {
       backface-visibility: hidden;
       transform: rotateY(180deg);
+      border-radius: 3px;
       position: absolute;
       top: 0;
       left: 0;
@@ -374,6 +478,16 @@
     letter-spacing: 13px;
     margin-bottom: 1.5rem;
     font-weight: 400;
+
+    @include respond(tab-port) {
+      letter-spacing: 10px;
+      font-size: 1.4rem;
+    }
+
+    @include respond(phone) {
+      letter-spacing: 6px;
+      font-size: 1.3rem;
+    }
   }
 
   hr {
@@ -392,6 +506,14 @@
     width: 50%;
     margin-top: 4rem;
     color: $color-dusty-pink;
+
+    @include respond(tab-port) {
+      width: 75%;
+    }
+
+    @include respond(phone) {
+      width: 95%;
+    }
 
     .form-group {
       border: none;
@@ -463,6 +585,132 @@
       border: none;
       font-size: 1.5rem;
       font-weight: 300;
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////
+// Service
+.service-container {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: $color-dusty-pink;
+  }
+
+  hr {
+    width: 9rem;
+    background: $color-dusty-pink;
+    height: 0.3rem;
+    text-align: center;
+    margin: 0 auto;
+    border: 0;
+  }
+
+  .bg-video {
+    margin-top: 7rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.15;
+    overflow: hidden;
+
+    &__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .service {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6rem 3rem 3rem 3rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &__picture {
+      background-size: cover;
+      height: 23rem;
+      border-radius: 3px;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+      &--1 {
+        background-image: url(./assets/individual.jpg);
+        background-position: center;
+      }
+
+      &--2 {
+        background-image: url(./assets/holiday.jpg);
+      }
+
+      &--3 {
+        background-image: url(./assets/occasion.jpg);
+        background-position: center top;
+      }
+    }
+
+    &__box {
+      position: relative;
+      flex-basis: 25%;
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+
+      @include respond(tab-port) {
+        margin-right: 0 !important;
+      }
+
+      @include respond(phone) {
+        width: 50%;
+        margin-bottom: 2rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+
+      &:hover {
+        transform: translateY(-1rem) scale(1.05);
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &__title {
+      font-size: 2.1rem;
+      text-align: center;
+      font-weight: 300;
+      display: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    &__description {
+      padding: 2rem;
+      font-size: 1.3rem;
+      hyphens: auto;
+      font-weight: 300;
     }
   }
 }
@@ -475,14 +723,23 @@
   background-color: $color-primary-dark;
   color: $color-dusty-orange;
   font-weight: 300;
+  position: relative;
 
   &__info {
     display: flex;
     justify-content: space-around;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__navigation {
     display: inline-block;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__list {
@@ -505,9 +762,17 @@
   }
 
   &__subscribe {
-    display: inline-block;
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
 
     input {
       height: 3.4rem;
@@ -526,6 +791,10 @@
         outline: none;
         background-color: #3d4849;
       }
+
+      @include respond(phone) {
+        display: block;
+      }
     }
 
     button {
@@ -534,8 +803,20 @@
       padding: 0.9rem 3rem;
       background-color: transparent;
       font-weight: 300;
-      border: 1px solid #ce947d;
+      border: 1px solid $color-dusty-orange;
       cursor: pointer;
+      transition: all 0.2s;
+
+      @include respond(phone) {
+        display: block;
+        text-align: center;
+        margin: 1rem auto;
+      }
+
+      &:hover {
+        background-color: $color-dusty-orange;
+        color: $color-primary-dark;
+      }
 
       &:focus,
       &:active {
@@ -548,6 +829,10 @@
   &__address {
     text-align: center;
 
+    @include respond(phone) {
+      margin-top: 20rem;
+    }
+
     p {
       &:not(:last-child) {
         margin-bottom: 1.5rem;
@@ -558,8 +843,16 @@
   &__copyright {
     margin-top: 5rem;
     text-align: center;
+
     p {
       display: inline-block;
+
+      @include respond(phone) {
+        display: block;
+        text-align: center;
+        margin-top: 0.7rem;
+        margin-right: 0 !important ;
+      }
 
       a {
         color: $color-dusty-orange-dark;
@@ -594,116 +887,6 @@
       &:hover {
         transform: scale(1.15);
       }
-    }
-  }
-}
-
-/////////////////////////////////////////
-// TESTIMONIALS
-.service-container {
-  position: relative;
-  height: 100vh;
-  margin-bottom: 2rem;
-
-  &__heading {
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    text-align: center;
-    letter-spacing: 15px;
-    padding-top: 5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 400;
-    color: $color-dusty-pink;
-  }
-
-  hr {
-    width: 9rem;
-    background: $color-dusty-pink;
-    height: 0.3rem;
-    text-align: center;
-    margin: 0 auto;
-    border: 0;
-  }
-
-  .bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    // z-index: -1;
-    opacity: 0.15;
-    overflow: hidden;
-
-    &__content {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .service {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 6rem 3rem 3rem 3rem;
-
-    &__picture {
-      background-size: cover;
-      height: 23rem;
-      border-radius: 3px;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
-      &--1 {
-        background-image: url(./assets/individual.jpg);
-        background-position: center;
-      }
-
-      &--2 {
-        background-image: url(./assets/holiday.jpg);
-      }
-
-      &--3 {
-        background-image: url(./assets/occasion.jpg);
-        background-position: center top;
-      }
-    }
-
-    &__box {
-      position: relative;
-      flex-basis: 25%;
-      border-radius: 3px;
-      background-color: rgba(255, 255, 255, 0.6);
-      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-      transition: all 0.3s;
-
-      &:not(:last-child) {
-        margin-right: 3rem;
-      }
-
-      &:hover {
-        transform: translateY(-1rem) scale(1.05);
-        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
-      }
-    }
-
-    &__title {
-      font-size: 2.1rem;
-      text-align: center;
-      font-weight: 300;
-      display: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    &__description {
-      padding: 2rem;
-      font-size: 1.3rem;
-      hyphens: auto;
-      font-weight: 300;
     }
   }
 }
