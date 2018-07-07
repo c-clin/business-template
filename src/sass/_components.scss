@@ -400,10 +400,12 @@
         @include absCenter;
         p::before {
           content: '\201C';
+          font-family: sans-serif;
           position: absolute;
-          top: 1rem;
-          left: -4rem;
-          font-size: 13rem;
+          top: 0;
+          left: -5rem;
+          font-size: 17rem;
+          color: rgba(#fff, 0.7);
         }
 
         p {
@@ -477,7 +479,7 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 13px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.3rem;
     font-weight: 400;
 
     @include respond(tab-port) {
@@ -861,7 +863,7 @@
         text-decoration: none;
 
         &:hover {
-          transform: skewY(-4deg) scale(1.15);
+          color: $color-grey-light;
         }
       }
 

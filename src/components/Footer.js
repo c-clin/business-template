@@ -28,9 +28,17 @@ const Footer = () => {
       <div className="footer__copyright">
         <p>&copy; All rights reserved by Prickles.</p>
         <p>
-          Pictures are from <a href="https://unsplash.com/">Unsplash</a>.
+          Pictures are from{' '}
+          <a href="https://unsplash.com/" className="footer__link">
+            Unsplash
+          </a>.
         </p>
-        <p>Made by Catherine Lin</p>.
+        <p>
+          Made by{' '}
+          <a href="https://github.com/c-clin" className="footer__link">
+            Catherine Lin
+          </a>
+        </p>.
       </div>
 
       <div className="footer__social-media">
