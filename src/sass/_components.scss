@@ -20,18 +20,8 @@
     }
   }
 
-  &__navigation {
-  }
-
   &__list {
     list-style: none;
-    // background-image: linear-gradient(
-    //   to right bottom,
-    //   $color-dusty-orange,
-    //   $color-dusty-pink
-    // );
-    // -webkit-background-clip: text;
-    // color: transparent;
   }
 
   &__link {
@@ -84,6 +74,8 @@
     url(./assets/plant-home.jpg); // Photo by Khai Sze Ong on Unsplash
   background-size: cover;
   background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-bottom: 2rem;
 
   .text-box {
