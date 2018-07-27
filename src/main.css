@@ -96,13 +96,29 @@ body {
       .header__link:last-child {
         margin-right: 1rem; } }
     .header__link a {
+      position: relative;
+      display: block;
+      padding: 5px 2px;
       text-decoration: none;
       background-image: linear-gradient(to right, #ce947d, #966a6a);
       -webkit-background-clip: text;
       color: transparent;
-      transition: background-image 1s ease-out; }
+      transition: all 0.5s; }
+      .header__link a::after {
+        content: '.';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 0;
+        height: 1px;
+        color: transparent;
+        background: #ce947d;
+        transition: all 0.5s; }
       .header__link a:hover {
         background-image: linear-gradient(to right, #966a6a, #ce947d); }
+        .header__link a:hover::after {
+          width: 100%; }
     .header__link:not(:last-child) {
       margin-right: 2rem; }
 
@@ -410,6 +426,7 @@ body {
   padding: 9rem 4rem;
   background-image: url("./assets/contact-plant.jpg");
   background-size: cover;
+  background-attachment: fixed;
   background-position: center top;
   position: relative;
   margin-bottom: 2rem; }
